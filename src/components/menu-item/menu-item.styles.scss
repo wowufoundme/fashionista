@@ -1,0 +1,45 @@
+$BLACK: #0a0a0a;
+
+.menu-item {
+    min-width: 30%;
+    height: 240px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $BLACK;
+    margin: 0 7.5px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:first-child {
+        margin-right: 7.5px;
+    }
+
+    &:last-child {
+        margin-left: 7.5px;
+    }
+
+    .content {
+        height: 90px;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $BLACK;
+    
+        .title {
+            font-weight: bold;
+            margin-bottom: 6px;
+            font-size: 22px;
+            color: lighten($color: $BLACK, $amount: 30%);
+        }
+    }
+    
+}
+
+.large {
+    height: 350px;
+}
